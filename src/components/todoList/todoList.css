@@ -1,0 +1,82 @@
+.todo-list-container {
+  background-color: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  animation: slideInUp 0.5s ease-out;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.todo-list-container span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-list-container .save-button {
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  display: inline-block;
+}
+.todo-list-container .cancel-button {
+  background-color: #42a5f5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.todo-list-container .save-button:hover {
+  background-color: #2196f3;
+}
+.todo-list-container .cancel-button:hover {
+  background-color: #2196f3;
+}
+
+.editing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideInDown 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+  }
+}
+
+.save-button {
+  margin-left: 20px;
+}
+
+.cancel-button{
+  margin-left: 20px;
+} 
